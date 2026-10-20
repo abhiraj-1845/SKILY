@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skily — Your Future, Figured Out | AI Career & Student Guidance</title>
+  <meta name="description" content="Personalized AI guidance to help you study smarter, discover your strengths, and build a career you'll love. Built for high school and college students.">
+  <meta name="theme-color" content="#7c3aed">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Skily — Your Future, Figured Out">
+  <meta property="og:description" content="Personalized AI guidance to help you study smarter, discover your strengths, and build a career you'll love.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Space Grotesk, Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+  <!-- Navigation Bar -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Skily Homepage">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span>Skily</span>
+        <span class="brand-badge">AI Copilot</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#how-skily-helps" class="nav-link">How It Works</a></li>
+          <li><a href="#career-paths" class="nav-link">Careers</a></li>
+          <li><a href="#stories" class="nav-link">Stories</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action CTAs -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (hidden via CSS; JS still references it) -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span class="theme-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+          <span class="theme-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <a href="#interactive-generator" class="btn btn-sm btn-secondary">Try Demo</a>
+        <a href="#cta" class="btn btn-sm btn-primary">Build My Roadmap</a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer">
+      <a href="#how-skily-helps" class="nav-link">How It Works</a>
+      <a href="#career-paths" class="nav-link">Careers</a>
+      <a href="#stories" class="nav-link">Stories</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <div class="mobile-theme-row">
+        <span>Toggle theme</span>
+        <button class="theme-toggle-btn" id="mobile-theme-toggle" aria-label="Toggle dark/light theme">
+          <span class="theme-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
+          </span>
+          <span class="theme-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+      </div>
+      <a href="#interactive-generator" class="btn btn-primary" style="margin-top:6px;">Build My Roadmap</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="container hero-grid">
+        <!-- Hero Left Column: Headline & Value Proposition -->
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-badge">✦ 2026 EDITION</span>
+            <span>Next-Gen AI Career Copilot for Students</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Your future, <span class="gradient-accent">figured out.</span>
+          </h1>
+
+          <p class="hero-subheading">
+            Personalized AI guidance to help you study smarter, discover your strengths, and build a career you’ll love.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#interactive-generator" class="btn btn-lg btn-primary">
+              <span>Build my roadmap</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#how-skily-helps" class="btn btn-lg btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              <span>Explore Skily</span>
+            </a>
+          </div>
+
+          <!-- Trust & Social Proof Row -->
+          <div class="hero-proof">
+            <div class="student-avatars" aria-label="Student community members">
+              <img class="avatar-stack" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Elena, Stanford sophomore">
+              <img class="avatar-stack" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=faces" alt="Marcus, Michigan junior">
+              <img class="avatar-stack" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces" alt="Aaliyah, high school senior">
+              <img class="avatar-stack" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Devon, Georgia Tech grad">
+            </div>
+            <div class="proof-text">
+              <strong>45,000+ ambitious students</strong>
+              <div class="stars-rating" aria-label="5 star rating">
+                <span>★★★★★</span>
+                <span style="color: var(--color-navy-400); font-size: 0.8rem; margin-left: 4px; font-weight: 600;">✦ No fluff, real roadmaps • 4.9/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Animated Layered Dashboard Illustration -->
+        <div class="hero-visual-wrapper">
+          <div class="dashboard-stage">
+
+            <!-- Floating Layer 1: Friendly AI Guide -->
+            <aside class="floating-card float-ai-guide" aria-label="Skily AI Copilot Notification">
+              <div class="ai-guide-head">
+                <div class="ai-avatar" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="ai-guide-title">Skily Copilot</div>
+                </div>
+                <span class="ai-tag">Realtime</span>
+              </div>
+              <p class="ai-dialogue">
+                “Hey Maya! Based on your curiosity in human-AI ethics, I found 2 summer fellowships matching your Figma & Python skills.”
+              </p>
+              <button class="ai-action-btn" onclick="document.querySelector('#career-paths').scrollIntoView({behavior: 'smooth'})">
+                View matched fellowships <span>→</span>
+              </button>
+            </aside>
+
+            <!-- Main Central Student Dashboard Card -->
+            <div class="dashboard-main-card">
+              <!-- Student Header & Status -->
+              <div class="dash-topbar">
+                <div class="student-info">
+                  <div class="student-avatar" aria-hidden="true">ML</div>
+                  <div class="student-meta">
+                    <h4>Maya Lin</h4>
+                    <p>
+                      <span class="status-dot"></span>
+                      <span>Sophomore • Cognitive Science & UI</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ai-status-badge">
+                  <span class="pulse-indicator"></span>
+                  <span>AI Plan Active</span>
+                </div>
+              </div>
+
+              <!-- Career Match & Target Banner -->
+              <div class="dash-target-banner">
+                <div class="target-details">
+                  <div class="target-label">Top Career Match • Summer 2027</div>
+                  <div class="target-title">AI Interaction Designer</div>
+                </div>
+                <div class="target-score">
+                  <div class="score-num">98%</div>
+                  <div class="score-label">Affinity Match</div>
+                </div>
+              </div>
+
+              <!-- Roadmap Preview Micro Nodes -->
+              <div class="dash-roadmap-preview">
+                <div class="preview-header">
+                  <h5>Active Semester Milestones</h5>
+                  <span>3 of 5 Completed</span>
+                </div>
+                <div class="roadmap-nodes-row">
+                  <div class="roadmap-mini-card">
+                    <span class="node-status-badge status-done">✓ Done</span>
+                    <div class="node-title">CS106B Systems & PyTorch</div>
+                  </div>
+                  <div class="roadmap-mini-card active">
+                    <span class="node-status-badge status-current">⚡ In Progress</span>
+                    <div class="node-title">Design System Portfolio Sprint</div>
+                  </div>
+                  <div class="roadmap-mini-card">
+                    <span class="node-status-badge status-upcoming">Next Up</span>
+                    <div class="node-title">Tech Internship Mock Rounds</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Skill Progress Tracking -->
+              <div class="skills-progress-section">
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span>Interaction Prototyping (Figma + Code)</span>
+                    <span style="color: var(--color-violet-primary);">94%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill fill-violet" style="width: 94%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span>Python & LLM Orchestration</span>
+                    <span style="color: var(--color-blue-deep);">82%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill fill-blue" style="width: 82%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-meta">
+                    <span>Qualitative User Research & Ethics</span>
+                    <span style="color: var(--color-emerald-success);">89%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill fill-emerald" style="width: 89%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Layer 2: Study Sprint AI Tracker -->
+            <div class="floating-card float-study-sprint" aria-label="Study Session Indicator">
+              <div class="sprint-head">
+                <div class="sprint-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Cognitive Sprint</span>
+                </div>
+                <div class="sprint-timer">25:00</div>
+              </div>
+              <div class="sprint-bar-bg">
+                <div class="sprint-bar-fill"></div>
+              </div>
+              <div class="sprint-stat">
+                <span>Active Recall: Optimal</span>
+                <span style="color: var(--color-blue-deep); font-weight: 700;">+85 XP</span>
+              </div>
+            </div>
+
+            <!-- Floating Layer 3: XP Achievement Badge -->
+            <div class="float-xp-badge" aria-label="Student Achievement Badge">
+              <div class="xp-icon" aria-hidden="true">🏆</div>
+              <div class="xp-text">
+                <strong>Weekly Goal Hit</strong>
+                <span>Ahead by 3 days</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 1: THE CHALLENGE (THE STUDENT DILEMMA)
+         ======================================================================= -->
+    <section class="section challenge-section" id="the-challenge">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <span>The Reality of Being a Student Today</span>
+          </div>
+          <h2 class="section-title">
+            Figuring out your future shouldn’t feel like a <span class="gradient-text">high-stakes guessing game.</span>
+          </h2>
+          <p class="section-subtitle">
+            Students face an overwhelming flood of generic advice, rapidly shifting job markets, and outdated academic pathways. Here is why the old way is failing ambitious learners.
+          </p>
+        </div>
+
+        <!-- Before vs. After Comparison -->
+        <div class="challenge-grid">
+          <!-- The Old Frustrating Way -->
+          <div class="challenge-card challenge-card-old reveal-on-scroll stagger-1">
+            <span class="challenge-badge badge-old">The Old Broken Way</span>
+            <h3>Fragmented, Panicked & Reactive</h3>
+            <ul class="challenge-list">
+              <li class="challenge-item">
+                <div class="challenge-icon icon-cross" aria-hidden="true">✕</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Dusty 2018 Campus Pamphlets</div>
+                  <p class="challenge-item-body">Meeting a counselor twice a year to get outdated printouts that ignore AI, climate, and modern remote roles.</p>
+                </div>
+              </li>
+              <li class="challenge-item">
+                <div class="challenge-icon icon-cross" aria-hidden="true">✕</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">3 AM Panic & Chaos Cramming</div>
+                  <p class="challenge-item-body">Balancing chaotic exam deadlines, disjointed syllabi, and late-night doom-scrolling with zero pacing.</p>
+                </div>
+              </li>
+              <li class="challenge-item">
+                <div class="challenge-icon icon-cross" aria-hidden="true">✕</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Blind Major Selection</div>
+                  <p class="challenge-item-body">73% of college grads never work in their field because they committed 4 years without testing real projects first.</p>
+                </div>
+              </li>
+              <li class="challenge-item">
+                <div class="challenge-icon icon-cross" aria-hidden="true">✕</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Contradictory Internet Noise</div>
+                  <p class="challenge-item-body">Endless confusing Reddit threads, LinkedIn influencer flexes, and doom-mongering about automation.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- The Skily Clarified Way -->
+          <div class="challenge-card challenge-card-skily reveal-on-scroll stagger-2">
+            <span class="challenge-badge badge-skily">✦ The Skily Engine</span>
+            <h3>Clear, Personalized & Empowered</h3>
+            <ul class="challenge-list">
+              <li class="challenge-item">
+                <div class="challenge-icon icon-check" aria-hidden="true">✓</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Always-On 24/7 AI Copilot</div>
+                  <p class="challenge-item-body">A dedicated mentor tuned to your learning speed, natural strengths, and real-time dream career goals.</p>
+                </div>
+              </li>
+              <li class="challenge-item">
+                <div class="challenge-icon icon-check" aria-hidden="true">✓</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Calibrated 20-Min Daily Sprints</div>
+                  <p class="challenge-item-body">Heavy syllabi deconstructed into bite-sized Pomodoro sprints that protect mental health and boost GPA.</p>
+                </div>
+              </li>
+              <li class="challenge-item">
+                <div class="challenge-icon icon-check" aria-hidden="true">✓</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Proof Over Pedigree</div>
+                  <p class="challenge-item-body">Test-drive day-in-the-life tasks and build tangible portfolio deliverables recruiters actually open.</p>
+                </div>
+              </li>
+              <li class="challenge-item">
+                <div class="challenge-icon icon-check" aria-hidden="true">✓</div>
+                <div class="challenge-text-wrap">
+                  <div class="challenge-item-head">Live 2026 Labor Market Sync</div>
+                  <p class="challenge-item-body">Real salary brackets, high-demand toolsets, and verified hiring trends updated continuously.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Impact Statistics Banner -->
+        <div class="stats-banner reveal-on-scroll">
+          <div class="stat-box">
+            <div class="stat-number gradient">73%</div>
+            <p class="stat-desc">of college grads do not work in their major field due to misinformed early choices.</p>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">94%</div>
+            <p class="stat-desc">of students using Skily report feeling clear and confident in their 3-year direction.</p>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number gradient">2.8x</div>
+            <p class="stat-desc">faster internship and research placement through project-based roadmaps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 2: HOW SKILY HELPS (3 PREMIER CARDS)
+         ======================================================================= -->
+    <section class="section features-section" id="how-skily-helps">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>The Skily Engine</span>
+          </div>
+          <h2 class="section-title">
+            Three superpowers to unlock your <span class="gradient-text">full academic potential.</span>
+          </h2>
+          <p class="section-subtitle">
+            From managing this week’s hardest problem set to landing your dream first offer, Skily coordinates every step of your student trajectory.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1: AI Study Planner -->
+          <article class="feature-card reveal-on-scroll stagger-1">
+            <span class="bento-sys-tag">[SYS.01 // FLOW STATE]</span>
+            <div class="feature-icon-wrapper icon-violet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3>AI Study Planner</h3>
+            <p>
+              Upload your syllabi or assignment sheets. Skily dynamically synthesizes a realistic study schedule with Pomodoro blocks, spaced repetition alerts, and burnout guardrails.
+            </p>
+
+            <!-- Interactive Mini Mock 1 -->
+            <div class="feature-preview-box">
+              <div style="font-size: 0.76rem; font-weight: 700; color: var(--color-navy-400); text-transform: uppercase; margin-bottom: 8px;">
+                Today's Adaptive Schedule
+              </div>
+              <div class="mock-planner-row">
+                <div class="mock-planner-title">
+                  <span>Linear Algebra Quiz Prep</span>
+                </div>
+                <span class="mock-tag-green">45m • Active</span>
+              </div>
+              <div class="mock-planner-row">
+                <div class="mock-planner-title">
+                  <span>UI Heuristic Reading</span>
+                </div>
+                <span class="mock-tag-purple">25m • Flashcards</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Career Discovery -->
+          <article class="feature-card reveal-on-scroll stagger-2">
+            <span class="bento-sys-tag">[SYS.02 // REAL-TIME DISCOVERY]</span>
+            <div class="feature-icon-wrapper icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h3>Career Discovery</h3>
+            <p>
+              Uncover emerging, high-impact careers that harmonize your innate curiosities with actual 2026 job market demand. Test drive day-in-the-life tasks risk-free.
+            </p>
+
+            <!-- Interactive Mini Mock 2 -->
+            <div class="feature-preview-box">
+              <div style="font-size: 0.76rem; font-weight: 700; color: var(--color-navy-400); text-transform: uppercase; margin-bottom: 6px;">
+                Click curiosities to match:
+              </div>
+              <div class="mock-tags-cloud">
+                <button class="mock-clickable-tag active">Design</button>
+                <button class="mock-clickable-tag">AI</button>
+                <button class="mock-clickable-tag">Ethics</button>
+                <button class="mock-clickable-tag">Bio</button>
+                <button class="mock-clickable-tag">Impact</button>
+              </div>
+              <div class="mock-career-output">
+                <div>
+                  <strong id="mock-career-role">Product Experience Architect</strong>
+                  <div style="font-size: 0.72rem; color: var(--color-navy-500);">High market growth</div>
+                </div>
+                <span class="mock-tag-purple" id="mock-career-match">97%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Skill Roadmap -->
+          <article class="feature-card reveal-on-scroll stagger-3">
+            <span class="bento-sys-tag">[SYS.03 // VERIFIED PROOF]</span>
+            <div class="feature-icon-wrapper icon-indigo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <h3>Skill Roadmap</h3>
+            <p>
+              Stop collecting random certificates. Skily designs a sequenced sequence of verifiable open-source projects, student competitions, and foundational portfolio deliverables.
+            </p>
+
+            <!-- Interactive Mini Mock 3 -->
+            <div class="feature-preview-box">
+              <div style="font-size: 0.76rem; font-weight: 700; color: var(--color-navy-400); text-transform: uppercase; margin-bottom: 8px;">
+                Verified Portfolio Milestone
+              </div>
+              <div class="mock-roadmap-step">
+                <div class="step-circle done">✓</div>
+                <div class="step-label">Python Data Pipeline</div>
+              </div>
+              <div class="mock-roadmap-step">
+                <div class="step-circle active">2</div>
+                <div class="step-label">Interactive AI Web Showcase</div>
+              </div>
+              <div class="mock-roadmap-step">
+                <div class="step-circle" style="background: var(--color-navy-100); color: var(--color-navy-400);">3</div>
+                <div class="step-label" style="color: var(--color-navy-400);">Technical Mock Defense</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3: YOUR PERSONALIZED ROADMAP (INTERACTIVE TIMELINE)
+         ======================================================================= -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Interactive Journey</span>
+          </div>
+          <h2 class="section-title">
+            From where you are to <span class="gradient-text">where you want to go.</span>
+          </h2>
+          <p class="section-subtitle">
+            See how Skily breaks down a daunting multi-year journey into clear, achievable checkpoints. Switch career tracks to see real custom student trajectories.
+          </p>
+        </div>
+
+        <!-- Archetype Selector Tabs -->
+        <div class="roadmap-controller reveal-on-scroll">
+          <button class="roadmap-tab active" data-archetype="software">AI & Software Engineer</button>
+          <button class="roadmap-tab" data-archetype="design">Product & UX Designer</button>
+          <button class="roadmap-tab" data-archetype="biotech">Biotech & Health Innovator</button>
+          <button class="roadmap-tab" data-archetype="climate">Climate & Clean Energy</button>
+        </div>
+
+        <!-- Animated Timeline Track -->
+        <div class="timeline-track-wrapper">
+          <div class="timeline-line">
+            <div class="timeline-line-progress"></div>
+          </div>
+
+          <!-- Step 1: Foundations -->
+          <div class="timeline-item reveal-on-scroll stagger-1">
+            <div class="timeline-content-side">
+              <div class="timeline-card">
+                <span class="timeline-stage-tag">Where You Are: Foundations</span>
+                <h4>Core Coding & Computer Science Mastery</h4>
+                <p>Build computational intuition with Python & TypeScript, discrete math, and core data structures. Begin solving algorithm challenges with clarity instead of rote memorization.</p>
+                <div class="timeline-action-tags">
+                  <span class="timeline-tag">Python 3.12</span>
+                  <span class="timeline-tag">Data Structures</span>
+                  <span class="timeline-tag">Git & GitHub</span>
+                  <span class="timeline-tag">Clean Code Fundamentals</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker-side">
+              <div class="timeline-marker">1</div>
+            </div>
+            <div class="timeline-spacer-side"></div>
+          </div>
+
+          <!-- Step 2: Applied Acceleration -->
+          <div class="timeline-item reveal-on-scroll stagger-2">
+            <div class="timeline-content-side">
+              <div class="timeline-card">
+                <span class="timeline-stage-tag">Phase 2: Applied Acceleration</span>
+                <h4>Fullstack Architecture & Modern AI APIs</h4>
+                <p>Construct end-to-end fullstack applications utilizing Next.js, FastAPI, vector databases, and LLM orchestration tools (LangChain / LlamaIndex).</p>
+                <div class="timeline-action-tags">
+                  <span class="timeline-tag">Vector DBs (Pinecone)</span>
+                  <span class="timeline-tag">REST & GraphQL</span>
+                  <span class="timeline-tag">PyTorch Basics</span>
+                  <span class="timeline-tag">Database Design</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker-side">
+              <div class="timeline-marker">2</div>
+            </div>
+            <div class="timeline-spacer-side"></div>
+          </div>
+
+          <!-- Step 3: Real-World Experience -->
+          <div class="timeline-item reveal-on-scroll stagger-3">
+            <div class="timeline-content-side">
+              <div class="timeline-card">
+                <span class="timeline-stage-tag">Phase 3: Real-World Experience</span>
+                <h4>Open-Source Contributions & Tech Internships</h4>
+                <p>Land high-impact student software internships. Lead a tech team in hackathons, publish open-source libraries, and optimize production cloud latency.</p>
+                <div class="timeline-action-tags">
+                  <span class="timeline-tag">Docker & CI/CD</span>
+                  <span class="timeline-tag">Distributed Systems</span>
+                  <span class="timeline-tag">Summer Internship</span>
+                  <span class="timeline-tag">System Design Mocks</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker-side">
+              <div class="timeline-marker">3</div>
+            </div>
+            <div class="timeline-spacer-side"></div>
+          </div>
+
+          <!-- Step 4: Where You Want to Go -->
+          <div class="timeline-item reveal-on-scroll stagger-4">
+            <div class="timeline-content-side">
+              <div class="timeline-card" style="border-color: rgba(124, 58, 237, 0.4); box-shadow: 0 12px 30px rgba(124, 58, 237, 0.12);">
+                <span class="timeline-stage-tag" style="background: var(--color-violet-subtle); color: var(--color-violet-primary);">Where You Want To Be: Career Launch</span>
+                <h4>High-Impact AI Engineer or Startup Founder</h4>
+                <p>Step confidently into high-demand roles at top AI labs, tech giants, or venture-backed startups with competitive compensation and autonomy.</p>
+                <div class="timeline-action-tags">
+                  <span class="timeline-tag" style="background: #ede9fe; color: #6d28d9; font-weight: 700;">$135k-$165k Starting</span>
+                  <span class="timeline-tag">Lead Product Ownership</span>
+                  <span class="timeline-tag">Continuous Mentorship</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-marker-side">
+              <div class="timeline-marker" style="background: #7c3aed; color: #ffffff;">4</div>
+            </div>
+            <div class="timeline-spacer-side"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ROADMAP BLUEPRINT MAKER (UPGRADED & EXPANDED)
+         ======================================================================= -->
+    <section class="container" id="interactive-generator">
+      <div class="generator-section">
+        <div class="section-header" style="margin-bottom: 36px;">
+          <div class="section-badge" style="background: rgba(255,255,255,0.1); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+            <span>⚡ Roadmap Blueprint Maker</span>
+          </div>
+          <h2 class="section-title">
+            Design Your Custom <span class="gradient-text">Career & Study Roadmap</span>
+          </h2>
+          <p class="section-subtitle">
+            A flexible, detailed, and personalized roadmap builder for students. Tailor every milestone, project challenge, and study habit to your exact stage and preferences.
+          </p>
+        </div>
+
+        <div class="generator-wizard-card">
+          <!-- Wizard Steps Indicator (4 Clear Steps) -->
+          <div class="wizard-steps-indicator" id="blueprint-steps-indicator">
+            <div class="step-indicator-item active" data-step-indicator="1">
+              <div class="step-num">1</div>
+              <span>Student Profile</span>
+            </div>
+            <div class="step-indicator-item" data-step-indicator="2">
+              <div class="step-num">2</div>
+              <span>Career & Interests</span>
+            </div>
+            <div class="step-indicator-item" data-step-indicator="3">
+              <div class="step-num">3</div>
+              <span>Learning Preferences</span>
+            </div>
+            <div class="step-indicator-item" data-step-indicator="4">
+              <div class="step-num">4</div>
+              <span>Roadmap Modules</span>
+            </div>
+          </div>
+
+          <!-- ==============================================================
+               FORM STEP 1: STUDENT PROFILE
+               ============================================================== -->
+          <div class="wizard-content-step active" id="wizard-step-1">
+            <h4 class="wizard-question-title">Step 1: Your Academic Background & Stage</h4>
+            <div class="blueprint-form-grid">
+              <!-- Current Education Level -->
+              <div class="form-group">
+                <label class="form-label" for="profile-edu-level">
+                  <span>Current Education Level <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="profile-edu-level">
+                  <option value="Undergraduate" selected>Undergraduate (College / University)</option>
+                  <option value="School">School (High School / Secondary K-12)</option>
+                  <option value="Postgraduate">Postgraduate (Master’s / PhD)</option>
+                  <option value="Other">Other / Career Switcher / Non-traditional</option>
+                </select>
+                <div class="form-helper">Adapts syllabus depth, project complexity, and recruiting guidance.</div>
+              </div>
+
+              <!-- Current Year or Grade (Dynamic!) -->
+              <div class="form-group">
+                <label class="form-label" for="profile-year-grade">
+                  <span>Current Year or Grade <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="profile-year-grade">
+                  <option value="1st Year (Freshman)">1st Year (Freshman)</option>
+                  <option value="2nd Year (Sophomore)" selected>2nd Year (Sophomore)</option>
+                  <option value="3rd Year (Junior)">3rd Year (Junior)</option>
+                  <option value="Final Year (Senior)">Final Year (Senior)</option>
+                </select>
+                <div class="form-helper">Calibrates deadlines toward semester exams or graduation.</div>
+              </div>
+
+              <!-- Field of Study or Stream -->
+              <div class="form-group">
+                <label class="form-label" for="profile-field-study">
+                  <span>Field of Study or Stream <span class="required-star">*</span></span>
+                </label>
+                <input type="text" class="form-input-text" id="profile-field-study" value="Computer Science" placeholder="e.g. Computer Science, Mechanical Eng, Economics, Pre-Med...">
+                <div class="quick-chips-row" id="field-suggestion-chips">
+                  <button type="button" class="quick-chip" data-field="Computer Science">Computer Science</button>
+                  <button type="button" class="quick-chip" data-field="Data Science & AI">Data Science & AI</button>
+                  <button type="button" class="quick-chip" data-field="Business & Finance">Business & Finance</button>
+                  <button type="button" class="quick-chip" data-field="Biological Sciences">Bio & Health</button>
+                  <button type="button" class="quick-chip" data-field="Design & Media">Design & UX</button>
+                  <button type="button" class="quick-chip" data-field="Arts & Humanities">Humanities</button>
+                </div>
+              </div>
+
+              <!-- Location / Preferred Region -->
+              <div class="form-group">
+                <label class="form-label" for="profile-location">
+                  <span>Location or Preferred Study Region <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="profile-location">
+                  <option value="United States & Canada" selected>United States & Canada</option>
+                  <option value="United Kingdom & Europe">United Kingdom & Europe</option>
+                  <option value="India & South Asia">India & South Asia</option>
+                  <option value="Australia & Asia-Pacific">Australia & Asia-Pacific</option>
+                  <option value="Remote & Global">Remote & Global</option>
+                  <option value="Other Regional System">Other Regional System</option>
+                </select>
+                <div class="form-helper">Tailors hiring cycles, academic terms, and regional opportunities.</div>
+              </div>
+
+              <!-- Current Skill Level -->
+              <div class="form-group full-width">
+                <label class="form-label">
+                  <span>Current Skill Level in Chosen Area <span class="required-star">*</span></span>
+                </label>
+                <div class="multi-chips-grid" id="skill-level-chips" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                  <div class="multi-chip-item" data-skill="Beginner">
+                    <span class="chip-icon">🌱</span>
+                    <div>
+                      <strong>Beginner</strong>
+                      <div style="font-size: 0.72rem; color: #94a3b8;">Starting from scratch, building fundamentals</div>
+                    </div>
+                  </div>
+                  <div class="multi-chip-item selected" data-skill="Intermediate">
+                    <span class="chip-icon">🌿</span>
+                    <div>
+                      <strong>Intermediate</strong>
+                      <div style="font-size: 0.72rem; color: #94a3b8;">Familiar with basics, ready for real builds</div>
+                    </div>
+                  </div>
+                  <div class="multi-chip-item" data-skill="Advanced">
+                    <span class="chip-icon">🌳</span>
+                    <div>
+                      <strong>Advanced</strong>
+                      <div style="font-size: 0.72rem; color: #94a3b8;">Experienced builder, targeting top-tier roles</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================================
+               FORM STEP 2: GOAL & CAREER INTERESTS
+               ============================================================== -->
+          <div class="wizard-content-step" id="wizard-step-2">
+            <h4 class="wizard-question-title">Step 2: Choose Your Career Goal & Interest Areas</h4>
+            <div class="blueprint-form-grid">
+              <!-- Searchable Career Goal Combobox -->
+              <div class="form-group full-width">
+                <label class="form-label" for="career-search-input">
+                  <span>Target Career Goal <span class="required-star">*</span></span>
+                  <span class="label-hint">Search list or type your custom career</span>
+                </label>
+                <div class="combobox-wrapper" id="career-combobox-wrapper">
+                  <div class="combobox-input-inner">
+                    <input type="text" class="form-input-text" id="career-search-input" value="AI & Machine Learning Engineer" placeholder="Search career or enter your own custom goal...">
+                    <button type="button" class="combobox-clear-btn" id="career-clear-btn" aria-label="Clear career selection">✕</button>
+                  </div>
+                  <div class="combobox-dropdown" id="career-dropdown-list">
+                    <!-- Injected and filtered via JS -->
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+                  <button type="button" class="btn btn-sm btn-secondary" id="btn-still-exploring" style="background: rgba(14, 165, 233, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+                    🧭 I’m still exploring (Discovery Track)
+                  </button>
+                  <span id="career-selected-badge" style="font-size: 0.8rem; color: #38bdf8; font-weight: 700;">
+                    Selected Goal: AI & Machine Learning Engineer
+                  </span>
+                </div>
+              </div>
+
+              <!-- Interest Areas Multi-Select -->
+              <div class="form-group full-width">
+                <label class="form-label">
+                  <span>Interest Areas (Select all that apply) <span class="required-star">*</span></span>
+                  <span class="label-hint" id="interest-count-hint">3 selected</span>
+                </label>
+                <div class="multi-chips-grid" id="interest-chips-container">
+                  <div class="multi-chip-item selected" data-interest="Technology & AI"><span class="chip-icon">🤖</span> Technology & AI</div>
+                  <div class="multi-chip-item selected" data-interest="Design & Creative Arts"><span class="chip-icon">🎨</span> Design & Creative Arts</div>
+                  <div class="multi-chip-item" data-interest="Business & Startups"><span class="chip-icon">💼</span> Business & Startups</div>
+                  <div class="multi-chip-item" data-interest="Healthcare & Medicine"><span class="chip-icon">🧬</span> Healthcare & Medicine</div>
+                  <div class="multi-chip-item selected" data-interest="Science & Research"><span class="chip-icon">🔬</span> Science & Research</div>
+                  <div class="multi-chip-item" data-interest="Finance & Economics"><span class="chip-icon">📈</span> Finance & Economics</div>
+                  <div class="multi-chip-item" data-interest="Environmental Sustainability"><span class="chip-icon">🌍</span> Climate & Sustainability</div>
+                  <div class="multi-chip-item" data-interest="Education & Social Impact"><span class="chip-icon">📚</span> Education & Impact</div>
+                </div>
+                <div class="form-helper">Pick multiple curiosities. Skily weaves them into interdisciplinary projects.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================================
+               FORM STEP 3: LEARNING PREFERENCES
+               ============================================================== -->
+          <div class="wizard-content-step" id="wizard-step-3">
+            <h4 class="wizard-question-title">Step 3: Study Schedule, Learning Style & Duration</h4>
+            <div class="blueprint-form-grid">
+              <!-- Available Study Time -->
+              <div class="form-group">
+                <label class="form-label" for="pref-study-time">
+                  <span>Available Study Time <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="pref-study-time">
+                  <option value="1 hour / day (5–7 hrs/wk)">1 hour / day (5–7 hrs/wk) — Sustainable Daily Habit</option>
+                  <option value="2 hours / day (10–14 hrs/wk)" selected>2 hours / day (10–14 hrs/wk) — Balanced Growth Pace</option>
+                  <option value="3+ hours / day (20+ hrs/wk)">3+ hours / day (20+ hrs/wk) — Intensive Immersion</option>
+                  <option value="Weekend Focus (8–10 hrs/wk)">Weekend Focus (8–10 hrs weekend sprints)</option>
+                </select>
+                <div class="form-helper">Calibrates realistic task counts to prevent burnout.</div>
+              </div>
+
+              <!-- Preferred Learning Style -->
+              <div class="form-group">
+                <label class="form-label" for="pref-learning-style">
+                  <span>Preferred Learning Style <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="pref-learning-style">
+                  <option value="Hands-on projects (Building real apps)">Hands-on projects (Building real builds)</option>
+                  <option value="Videos (Visual tutorials & walkthroughs)">Videos (Video tutorials & walkthroughs)</option>
+                  <option value="Reading (Documentation & books)">Reading (Documentation & in-depth texts)</option>
+                  <option value="Mix of all (Balanced multimedia)" selected>Mix of all (Balanced multimedia)</option>
+                </select>
+                <div class="form-helper">Determines recommended resources and challenge formats.</div>
+              </div>
+
+              <!-- Preferred Pace -->
+              <div class="form-group">
+                <label class="form-label" for="pref-pace">
+                  <span>Preferred Pace <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="pref-pace">
+                  <option value="Flexible (Low stress, adapts to exams)">Flexible (Low stress, adapts to exams)</option>
+                  <option value="Steady (Consistent weekly habits)" selected>Steady (Consistent weekly checkpoints)</option>
+                  <option value="Intensive (Fast-paced crash sprint)">Intensive (Fast-paced crash sprint)</option>
+                </select>
+                <div class="form-helper">Governs milestone intensity and review frequency.</div>
+              </div>
+
+              <!-- Preferred Roadmap Length -->
+              <div class="form-group">
+                <label class="form-label" for="pref-roadmap-length">
+                  <span>Preferred Roadmap Length <span class="required-star">*</span></span>
+                </label>
+                <select class="form-select" id="pref-roadmap-length">
+                  <option value="30 Days">30 Days (Crash Sprint)</option>
+                  <option value="3 Months" selected>3 Months (Quarterly Mastery)</option>
+                  <option value="6 Months">6 Months (Semester Milestone)</option>
+                  <option value="1 Year">1 Year (Comprehensive Foundation & Launch)</option>
+                </select>
+                <div class="form-helper">Structures the phases from immediate sprints to full-year trajectory.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================================
+               FORM STEP 4: ROADMAP CUSTOMIZATION
+               ============================================================== -->
+          <div class="wizard-content-step" id="wizard-step-4">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 16px;">
+              <h4 class="wizard-question-title" style="margin-bottom: 0;">Step 4: Customize What to Include in Your Roadmap</h4>
+              <div style="display: flex; gap: 8px;">
+                <button type="button" class="quick-chip" id="btn-select-all-modules">Select All</button>
+                <button type="button" class="quick-chip" id="btn-reset-modules">Reset Recommended</button>
+              </div>
+            </div>
+            <p style="text-align: center; color: #94a3b8; font-size: 0.88rem; margin-bottom: 24px;">
+              Toggle the modules you want included in each phase of your blueprint:
+            </p>
+            <div class="module-customization-grid" id="modules-container">
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="milestones" checked>
+                <div class="module-label-content">
+                  <strong>Learning milestones</strong>
+                  <span>Phase themes, weekly concepts, and core syllabus breakdown.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="topics" checked>
+                <div class="module-label-content">
+                  <strong>Recommended subjects or topics</strong>
+                  <span>Foundational academic prerequisites and domain topic outlines.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="skills" checked>
+                <div class="module-label-content">
+                  <strong>Skills to develop</strong>
+                  <span>Core technical toolsets, languages, and strategic soft skills.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="projects" checked>
+                <div class="module-label-content">
+                  <strong>Projects & practical experience</strong>
+                  <span>Hands-on challenge briefs with specifications and architecture hints.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="courses" checked>
+                <div class="module-label-content">
+                  <strong>Courses & learning resources</strong>
+                  <span>Curated free courses, official documentation, and textbooks.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="portfolio" checked>
+                <div class="module-label-content">
+                  <strong>Portfolio-building tasks</strong>
+                  <span>GitHub repository checklists, case study writes, and live deployments.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="internship" checked>
+                <div class="module-label-content">
+                  <strong>Internship / work-prep drills</strong>
+                  <span>Resume bullet points, STAR interview questions, and networking steps.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="exploration" checked>
+                <div class="module-label-content">
+                  <strong>Career exploration activities</strong>
+                  <span>Day-in-the-life tasks, industry podcasts, and shadowing prompts.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="checkpoints" checked>
+                <div class="module-label-content">
+                  <strong>Progress checkpoints</strong>
+                  <span>Self-assessment quizzes, code reviews, and benchmark evaluations.</span>
+                </div>
+              </label>
+
+              <label class="module-checkbox-label">
+                <input type="checkbox" name="module-toggle" value="nextsteps" checked>
+                <div class="module-label-content">
+                  <strong>Suggested next steps</strong>
+                  <span>Post-roadmap graduation guidance, certifications, and career launch.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Wizard Form Navigation Buttons -->
+          <div class="wizard-nav-btns" id="wizard-form-nav">
+            <button class="btn btn-secondary" id="wizard-prev-btn" style="visibility: hidden;">← Back</button>
+            <button class="btn btn-primary" id="wizard-next-btn">Continue →</button>
+          </div>
+
+          <!-- ==============================================================
+               LOADING STATE (CLEAR DEMO SIMULATION)
+               ============================================================== -->
+          <div class="wizard-generating" id="wizard-loading-screen">
+            <div class="demo-disclaimer-pill">✦ Demo Simulation • Intelligent Client-Side Generation</div>
+            <div class="generating-spinner"></div>
+            <div class="generating-text" id="generating-dynamic-text">Analyzing your student profile and learning style...</div>
+            <div class="generating-subtext">Skily is synthesizing your customized phases and action checkpoints...</div>
+          </div>
+
+          <!-- ==============================================================
+               GENERATED RESULTS VIEW (RICH PHASES, PROGRESS, CONTROLS)
+               ============================================================== -->
+          <div class="wizard-result-card" id="wizard-results-view">
+            <!-- Disclaimer Banner -->
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+              <span class="demo-disclaimer-pill" style="margin-bottom: 0;">
+                ✦ Demo Prototype • Front-End Generated Blueprint
+              </span>
+              <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">
+                Saved locally • Click checkboxes to track task progress
+              </span>
+            </div>
+
+            <!-- Result Header -->
+            <div class="result-header">
+              <div>
+                <h3 id="result-plan-title" style="font-size: 1.55rem; color: var(--color-navy-950);">
+                  Custom AI & Machine Learning Roadmap
+                </h3>
+                <p id="result-plan-subtitle" style="font-size: 0.88rem; color: var(--color-navy-500); margin-top: 4px;">
+                  Undergraduate • 2nd Year • 3 Months • 2 hrs / day
+                </p>
+              </div>
+              <span class="result-badge" id="result-plan-badge">
+                Steady Pace • 12-Week Sprint
+              </span>
+            </div>
+
+            <!-- Global Live Task Progress Bar -->
+            <div class="roadmap-progress-container">
+              <div class="progress-header">
+                <span>Overall Blueprint Progress</span>
+                <span id="progress-percentage-text">0 of 14 tasks completed (0%)</span>
+              </div>
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill-live" id="live-progress-fill"></div>
+              </div>
+            </div>
+
+            <!-- Generated Multi-Phase Container -->
+            <div class="phases-stack" id="roadmap-phases-container">
+              <!-- Dynamically populated via JS -->
+            </div>
+
+            <!-- Next Steps / Graduation Card -->
+            <div id="roadmap-next-steps-container" style="background: var(--color-bg-page); border: 1px solid var(--color-navy-100); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 28px;">
+              <h5 style="color: var(--color-violet-primary); font-size: 0.95rem; margin-bottom: 8px; font-weight: 700;">
+                🚀 Suggested Post-Roadmap Next Steps
+              </h5>
+              <p id="roadmap-next-steps-text" style="font-size: 0.88rem; color: var(--color-navy-700); margin-bottom: 10px;">
+                After completing these 4 phases, begin active application submissions for Summer fellowships, schedule alumni portfolio reviews, and deploy your capstone to production.
+              </p>
+            </div>
+
+            <!-- Results Controls Bar -->
+            <div class="results-controls-bar">
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button class="btn btn-sm btn-secondary" id="btn-edit-answers">
+                  ✏️ Edit Answers
+                </button>
+                <button class="btn btn-sm btn-secondary" id="btn-regenerate-roadmap">
+                  🔄 Regenerate
+                </button>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button class="btn btn-sm btn-secondary" id="btn-copy-markdown">
+                  📋 Copy Summary
+                </button>
+                <button class="btn btn-sm btn-secondary" id="btn-print-roadmap">
+                  🖨️ Print / PDF
+                </button>
+                <button class="btn btn-sm btn-primary" id="btn-save-roadmap">
+                  💾 Save Roadmap
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4: CAREER PATHS (ATTRACTIVE CAREER CARDS)
+         ======================================================================= -->
+    <section class="section career-paths-section" id="career-paths">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            <span>Explore High-Impact Careers</span>
+          </div>
+          <h2 class="section-title">
+            Discover roles where your curiosity <span class="gradient-text">meets massive opportunity.</span>
+          </h2>
+          <p class="section-subtitle">
+            Explore fast-growing 2026 careers vetted for student growth, compensation, and technological durability. Click any card for a full day-in-the-life blueprint.
+          </p>
+        </div>
+
+        <div class="career-grid">
+          <!-- Career Card 1: AI Product Designer -->
+          <div class="career-card reveal-on-scroll stagger-1">
+            <div class="career-card-top">
+              <div class="career-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <span class="career-match-badge">98% Match</span>
+            </div>
+            <h4>AI Product Designer</h4>
+            <div class="career-category">Design & Cognition</div>
+            <div class="career-stats-row">
+              <div class="career-stat-item">
+                <span class="career-stat-label">Avg. Starting</span>
+                <span class="career-stat-val">$125,000</span>
+              </div>
+              <div class="career-stat-item">
+                <span class="career-stat-label">Market Outlook</span>
+                <span class="career-stat-val career-stat-growth">+34% Rapid</span>
+              </div>
+            </div>
+            <div class="career-skills-label">Core Skills to Build</div>
+            <div class="career-skills-tags">
+              <span class="career-skill-pill">Figma Systems</span>
+              <span class="career-skill-pill">Human-AI Friction</span>
+              <span class="career-skill-pill">Generative UI</span>
+              <span class="career-skill-pill">User Research</span>
+            </div>
+            <div class="career-footer">
+              <div class="career-next-step">
+                <strong>Next Step for Students:</strong> Build 1 multimodal agent prototype case study.
+              </div>
+              <button class="career-action-btn" data-career-target="ai-designer">
+                View Career Blueprint <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Career Card 2: Climate Tech Engineer -->
+          <div class="career-card reveal-on-scroll stagger-2">
+            <div class="career-card-top">
+              <div class="career-icon" style="color: var(--color-blue-deep); background: var(--color-blue-subtle);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <span class="career-match-badge" style="background: #e0f2fe; color: #0284c7;">95% Match</span>
+            </div>
+            <h4>Climate Tech Engineer</h4>
+            <div class="career-category">Energy & Sustainability</div>
+            <div class="career-stats-row">
+              <div class="career-stat-item">
+                <span class="career-stat-label">Avg. Starting</span>
+                <span class="career-stat-val">$118,000</span>
+              </div>
+              <div class="career-stat-item">
+                <span class="career-stat-label">Market Outlook</span>
+                <span class="career-stat-val career-stat-growth">+42% Surging</span>
+              </div>
+            </div>
+            <div class="career-skills-label">Core Skills to Build</div>
+            <div class="career-skills-tags">
+              <span class="career-skill-pill">Grid Analytics</span>
+              <span class="career-skill-pill">Thermodynamics</span>
+              <span class="career-skill-pill">Python GIS</span>
+              <span class="career-skill-pill">LCA Modeling</span>
+            </div>
+            <div class="career-footer">
+              <div class="career-next-step">
+                <strong>Next Step for Students:</strong> Simulate battery dispatch on public microgrid datasets.
+              </div>
+              <button class="career-action-btn" data-career-target="climate-engineer">
+                View Career Blueprint <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Career Card 3: Neurotech & Cognitive Researcher -->
+          <div class="career-card reveal-on-scroll stagger-3">
+            <div class="career-card-top">
+              <div class="career-icon" style="color: #6366f1; background: #e0e7ff;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <span class="career-match-badge">92% Match</span>
+            </div>
+            <h4>Neurotech Researcher</h4>
+            <div class="career-category">Neuroscience & CS</div>
+            <div class="career-stats-row">
+              <div class="career-stat-item">
+                <span class="career-stat-label">Avg. Starting</span>
+                <span class="career-stat-val">$135,000</span>
+              </div>
+              <div class="career-stat-item">
+                <span class="career-stat-label">Market Outlook</span>
+                <span class="career-stat-val career-stat-growth">+28% Steady</span>
+              </div>
+            </div>
+            <div class="career-skills-label">Core Skills to Build</div>
+            <div class="career-skills-tags">
+              <span class="career-skill-pill">Signal Processing</span>
+              <span class="career-skill-pill">MNE-Python</span>
+              <span class="career-skill-pill">Neural Nets</span>
+              <span class="career-skill-pill">Bioethics</span>
+            </div>
+            <div class="career-footer">
+              <div class="career-next-step">
+                <strong>Next Step for Students:</strong> Join undergrad neural decoding lab or build open EEG viewer.
+              </div>
+              <button class="career-action-btn" data-career-target="neurotech">
+                View Career Blueprint <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Career Card 4: Cloud & AI Security Architect -->
+          <div class="career-card reveal-on-scroll stagger-1">
+            <div class="career-card-top">
+              <div class="career-icon" style="color: #059669; background: #d1fae5;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <span class="career-match-badge">94% Match</span>
+            </div>
+            <h4>Cloud Security Architect</h4>
+            <div class="career-category">Infrastructure & Cyber</div>
+            <div class="career-stats-row">
+              <div class="career-stat-item">
+                <span class="career-stat-label">Avg. Starting</span>
+                <span class="career-stat-val">$140,000</span>
+              </div>
+              <div class="career-stat-item">
+                <span class="career-stat-label">Market Outlook</span>
+                <span class="career-stat-val career-stat-growth">+31% High</span>
+              </div>
+            </div>
+            <div class="career-skills-label">Core Skills to Build</div>
+            <div class="career-skills-tags">
+              <span class="career-skill-pill">AWS / GCP Security</span>
+              <span class="career-skill-pill">Agent Threat Models</span>
+              <span class="career-skill-pill">Docker & K8s</span>
+              <span class="career-skill-pill">Zero Trust</span>
+            </div>
+            <div class="career-footer">
+              <div class="career-next-step">
+                <strong>Next Step for Students:</strong> Pass AWS Solutions Architect Associate & run CTF challenges.
+              </div>
+              <button class="career-action-btn" data-career-target="cloud-security">
+                View Career Blueprint <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Career Card 5: Bioinformatics Specialist -->
+          <div class="career-card reveal-on-scroll stagger-2">
+            <div class="career-card-top">
+              <div class="career-icon" style="color: #ea580c; background: #ffedd5;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <span class="career-match-badge">91% Match</span>
+            </div>
+            <h4>Bioinformatics Specialist</h4>
+            <div class="career-category">Genomics & Data Science</div>
+            <div class="career-stats-row">
+              <div class="career-stat-item">
+                <span class="career-stat-label">Avg. Starting</span>
+                <span class="career-stat-val">$120,000</span>
+              </div>
+              <div class="career-stat-item">
+                <span class="career-stat-label">Market Outlook</span>
+                <span class="career-stat-val career-stat-growth">+36% High</span>
+              </div>
+            </div>
+            <div class="career-skills-label">Core Skills to Build</div>
+            <div class="career-skills-tags">
+              <span class="career-skill-pill">BioPython</span>
+              <span class="career-skill-pill">RNA-Seq</span>
+              <span class="career-skill-pill">AlphaFold</span>
+              <span class="career-skill-pill">Biostatistics</span>
+            </div>
+            <div class="career-footer">
+              <div class="career-next-step">
+                <strong>Next Step for Students:</strong> Build gene mutation visualizer from public NCBI datasets.
+              </div>
+              <button class="career-action-btn" data-career-target="bioinformatics">
+                View Career Blueprint <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Career Card 6: Creative Technologist -->
+          <div class="career-card reveal-on-scroll stagger-3">
+            <div class="career-card-top">
+              <div class="career-icon" style="color: #db2777; background: #fce7f3;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="career-match-badge">96% Match</span>
+            </div>
+            <h4>Creative Technologist</h4>
+            <div class="career-category">Interactive Art & Code</div>
+            <div class="career-stats-row">
+              <div class="career-stat-item">
+                <span class="career-stat-label">Avg. Starting</span>
+                <span class="career-stat-val">$115,000</span>
+              </div>
+              <div class="career-stat-item">
+                <span class="career-stat-label">Market Outlook</span>
+                <span class="career-stat-val career-stat-growth">+29% Steady</span>
+              </div>
+            </div>
+            <div class="career-skills-label">Core Skills to Build</div>
+            <div class="career-skills-tags">
+              <span class="career-skill-pill">Three.js / WebGL</span>
+              <span class="career-skill-pill">GLSL Shaders</span>
+              <span class="career-skill-pill">Generative Audio</span>
+              <span class="career-skill-pill">Physical Sensors</span>
+            </div>
+            <div class="career-footer">
+              <div class="career-next-step">
+                <strong>Next Step for Students:</strong> Deploy 3D WebGL sound visualizer and publish source code.
+              </div>
+              <button class="career-action-btn" data-career-target="creative-technologist">
+                View Career Blueprint <span>→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 5: STUDENT STORIES (BELIEVABLE OUTCOMES & REPUTATION)
+         ======================================================================= -->
+    <section class="section stories-section" id="stories">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Real Student Journeys</span>
+          </div>
+          <h2 class="section-title">
+            From panic and confusion to <span class="gradient-text">dream job offers.</span>
+          </h2>
+          <p class="section-subtitle">
+            Read how students across high schools, community colleges, and top research universities found direction, boosted their GPA, and unlocked life-changing internships with Skily.
+          </p>
+        </div>
+
+        <div class="stories-grid">
+          <!-- Story 1: Elena -->
+          <article class="story-card reveal-on-scroll stagger-1">
+            <div class="story-header">
+              <img class="story-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop&crop=faces" alt="Elena Rostova">
+              <div class="story-author">
+                <h4>Elena Rostova</h4>
+                <p>Stanford '27 • Symbolic Systems</p>
+              </div>
+            </div>
+            <p class="story-quote">
+              “I was utterly torn between traditional pre-med and computer science. Skily’s AI career discovery simulated a real week in Computational Biology. I realized that was my true calling, not chemistry lab benches!”
+            </p>
+            <div class="story-outcome">
+              <div class="outcome-badge">✓ Outcome:</div>
+              <span>Summer 2026 Fellow at Genentech</span>
+            </div>
+          </article>
+
+          <!-- Story 2: Marcus -->
+          <article class="story-card reveal-on-scroll stagger-2">
+            <div class="story-header">
+              <img class="story-avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=120&h=120&fit=crop&crop=faces" alt="Marcus Chen">
+              <div class="story-author">
+                <h4>Marcus Chen</h4>
+                <p>Univ. of Michigan '26 • MechEng</p>
+              </div>
+            </div>
+            <p class="story-quote">
+              “The AI Study Planner stopped my 3 AM cramming panic. It scheduled my thermodynamics problem sets into 20-minute daily sprints. My GPA jumped from 3.1 to 3.85 while I captained our Formula SAE vehicle.”
+            </p>
+            <div class="story-outcome">
+              <div class="outcome-badge">✓ Outcome:</div>
+              <span>Raised GPA to 3.85 + EV Battery Co-op</span>
+            </div>
+          </article>
+
+          <!-- Story 3: Aaliyah -->
+          <article class="story-card reveal-on-scroll stagger-3">
+            <div class="story-header">
+              <img class="story-avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=120&h=120&fit=crop&crop=faces" alt="Aaliyah Patel">
+              <div class="story-author">
+                <h4>Aaliyah Patel</h4>
+                <p>Oakridge High Senior • Pre-Law & Tech</p>
+              </div>
+            </div>
+            <p class="story-quote">
+              “My school counselors gave me 6-year-old course sheets. Skily mapped out exact open-source policy briefs to include on my college essays. It made my applications stand out immediately.”
+            </p>
+            <div class="story-outcome">
+              <div class="outcome-badge">✓ Outcome:</div>
+              <span>Admitted to Top-Choice Dream University</span>
+            </div>
+          </article>
+
+          <!-- Story 4: Devon -->
+          <article class="story-card reveal-on-scroll stagger-4">
+            <div class="story-header">
+              <img class="story-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=faces" alt="Devon Rivera">
+              <div class="story-author">
+                <h4>Devon Rivera</h4>
+                <p>Georgia Tech '25 • Cybersecurity</p>
+              </div>
+            </div>
+            <p class="story-quote">
+              “The roadmap took massive security certifications that felt impossible and turned them into daily bite-sized tasks. I passed AWS and Security+ on my first try and signed a return offer 6 months before graduating.”
+            </p>
+            <div class="story-outcome">
+              <div class="outcome-badge">✓ Outcome:</div>
+              <span>Cloud Security Role ($138k starting)</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Partner Universities & Institutions -->
+        <div class="partners-row reveal-on-scroll">
+          <div class="partners-title">Students & Alumni Represented From Top Campuses</div>
+          <div class="partners-logos">
+            <div class="partner-logo-item">Stanford</div>
+            <div class="partner-logo-item">UC Berkeley</div>
+            <div class="partner-logo-item">Univ. of Michigan</div>
+            <div class="partner-logo-item">Georgia Tech</div>
+            <div class="partner-logo-item">MIT Media Lab</div>
+            <div class="partner-logo-item">UT Austin</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 6: FAQ ACCORDION
+         ======================================================================= -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span>Got Questions?</span>
+          </div>
+          <h2 class="section-title">
+            Frequently asked <span class="gradient-text">questions.</span>
+          </h2>
+          <p class="section-subtitle">
+            Everything you need to know about how Skily guides your future, protects your student data, and fits into your school schedule.
+          </p>
+        </div>
+
+        <div class="faq-accordion reveal-on-scroll">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does Skily personalize recommendations for my specific school and courses?</span>
+              <div class="faq-icon">↓</div>
+            </button>
+            <div class="faq-answer">
+              <p>
+                When you sign up, you can import or paste course syllabi, select your university or high school curriculum, and state your target career ambitions. Skily’s AI evaluates your credit requirements alongside modern hiring trends to schedule real study milestones that match your school’s exam calendar.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is Skily free for high school and university students?</span>
+              <div class="faq-icon">↓</div>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! Skily offers a permanently free tier for students that includes core AI study scheduling, basic career discovery assessments, and public milestone roadmaps. We also partner with universities and scholarship programs to grant all students complimentary access to advanced mock interviews and portfolio feedback.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How is Skily different from asking ChatGPT or browsing Google?</span>
+              <div class="faq-icon">↓</div>
+            </button>
+            <div class="faq-answer">
+              <p>
+                General AI chatbots give generic, disconnected text responses that forget your context and can’t track deadlines. Skily is an integrated student operating system: it maintains your persistent academic record, tracks your project deliverables, re-calibrates study plans when you fall behind, and links directly to verified internship opportunities.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is my student data and academic record safe and private?</span>
+              <div class="faq-icon">↓</div>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Strictly yes. Skily is fully FERPA-compliant and GDPR-aligned. We never sell student data, grades, or personal contact information to third-party recruiters or advertisers. Your data is used exclusively to calibrate your personal roadmap and study experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 7: FINAL CALL TO ACTION
+         ======================================================================= -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card reveal-on-scroll">
+          <div class="cta-glow-bg"></div>
+          <div class="cta-content">
+            <div class="section-badge" style="background: rgba(255, 255, 255, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+              <span>Start Your Journey Today</span>
+            </div>
+            <h2 class="cta-headline">
+              Your next chapter <span style="background: linear-gradient(135deg, #a78bfa, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">starts here.</span>
+            </h2>
+            <p class="cta-subheading">
+              Join over 45,000 ambitious students finding clarity, acing their classes, and building careers they love. Set up your personalized roadmap in less than 2 minutes.
+            </p>
+
+            <!-- Quick Email Signup Form -->
+            <form class="cta-form" id="cta-signup-form" aria-label="Sign up for Skily">
+              <input type="email" class="cta-input" placeholder="Enter your student or personal email..." required aria-label="Student email address">
+              <button type="submit" class="btn btn-primary">
+                <span>Build My Roadmap</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+
+            <div class="cta-micro-guarantees">
+              <span>✓ Free forever student tier</span>
+              <span>✓ No credit card required</span>
+              <span>✓ 100% FERPA & student privacy compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       SECTION 8: FOOTER
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="brand-logo" aria-label="Skily Homepage">
+            <div class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span>Skily</span>
+          </a>
+          <p>
+            The AI-powered student success and career guidance copilot. Empowering learners worldwide to study with purpose, discover their potential, and shape tomorrow.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Skily Twitter / X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Skily LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Skily Discord Community">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6h0a14.5 14.5 0 0 0-4-1.2 12.6 12.6 0 0 0-.6 1.2 13.9 13.9 0 0 0-2.8 0 12.6 12.6 0 0 0-.6-1.2A14.5 14.5 0 0 0 6 6a16.2 16.2 0 0 0-3 11.5 14.5 14.5 0 0 0 4.5 2.3 11.8 11.8 0 0 0 1-1.6 9.7 9.7 0 0 1-1.6-.8l.4-.3a11.9 11.9 0 0 0 9.4 0l.4.3a9.7 9.7 0 0 1-1.6.8 11.8 11.8 0 0 0 1 1.6 14.5 14.5 0 0 0 4.5-2.3A16.2 16.2 0 0 0 18 6z"></path><circle cx="9" cy="12" r="1"></circle><circle cx="15" cy="12" r="1"></circle></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Skily GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 1: Features -->
+        <div class="footer-column">
+          <h5>Features</h5>
+          <ul class="footer-links">
+            <li><a href="#how-skily-helps">AI Study Planner</a></li>
+            <li><a href="#how-skily-helps">Career Discovery</a></li>
+            <li><a href="#roadmap">Skill Roadmap</a></li>
+            <li><a href="#career-paths">Market Trends 2026</a></li>
+            <li><a href="#interactive-generator">Interactive Demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Resources -->
+        <div class="footer-column">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="#stories">Student Stories</a></li>
+            <li><a href="#career-paths">Career Blueprints</a></li>
+            <li><a href="#faq">Curriculum Guide</a></li>
+            <li><a href="#faq">FAQ & Help</a></li>
+            <li><a href="#cta">Early Access Waitlist</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: About -->
+        <div class="footer-column">
+          <h5>About</h5>
+          <ul class="footer-links">
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Educator Partners</a></li>
+            <li><a href="#">Careers at Skily</a></li>
+            <li><a href="#">Press & Media Kit</a></li>
+            <li><a href="#">Student Ambassadors</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-column">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@skily.ai">hello@skily.ai</a></li>
+            <li><a href="mailto:partnerships@skily.ai">University Inquiries</a></li>
+            <li><a href="#">Campus Support Desk</a></li>
+            <li><a href="#">Join Discord Office Hours</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Skily Technologies Inc. All rights reserved. •
+          <a href="#">Privacy Policy</a> •
+          <a href="#">Terms of Service</a> •
+          <a href="#">FERPA Student Data Pledge</a>
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       CAREER BLUEPRINT MODAL
+       ======================================================================= -->
+  <div class="modal-overlay" id="career-modal" role="dialog" aria-modal="true" aria-labelledby="modal-career-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close career details">✕</button>
+
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+        <span class="section-badge" style="margin-bottom: 0;">Verified 2026 Career Blueprint</span>
+      </div>
+
+      <h3 id="modal-career-title" style="font-size: 1.8rem; margin-bottom: 8px; color: var(--color-navy-950);">Career Title</h3>
+
+      <div style="display: flex; gap: 20px; margin-bottom: 20px; font-size: 0.95rem;">
+        <div>
+          <span style="color: var(--color-navy-500); font-size: 0.78rem; text-transform: uppercase;">Starting Salary:</span>
+          <strong id="modal-career-salary" style="display: block; color: var(--color-navy-900);">$120,000</strong>
+        </div>
+        <div>
+          <span style="color: var(--color-navy-500); font-size: 0.78rem; text-transform: uppercase;">10-Year Growth:</span>
+          <strong id="modal-career-growth" style="display: block; color: var(--color-emerald-success);">+32% Rapid</strong>
+        </div>
+      </div>
+
+      <p id="modal-career-overview" style="margin-bottom: 24px; font-size: 0.98rem; line-height: 1.6; color: var(--color-navy-700);">
+        Detailed role overview text.
+      </p>
+
+      <h4 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--color-navy-900);">Day in the Life of a Professional</h4>
+      <ul id="modal-career-schedule" style="list-style: none; margin-bottom: 24px; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; color: var(--color-navy-700);">
+        <!-- Filled dynamically via JS -->
+      </ul>
+
+      <div style="background: var(--color-bg-page); border: 1px solid var(--color-navy-100); border-radius: var(--radius-md); padding: 18px; margin-bottom: 24px;">
+        <h5 style="font-size: 0.88rem; color: var(--color-violet-primary); margin-bottom: 6px; font-weight: 700;">Recommended Student Starter Project:</h5>
+        <p id="modal-career-project" style="font-size: 0.88rem; color: var(--color-navy-800); margin: 0;">
+          Project prompt text.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <button class="btn btn-primary" onclick="document.getElementById('career-modal').classList.remove('active'); document.getElementById('interactive-generator').scrollIntoView({behavior:'smooth'});">
+          Generate Roadmap for this Role
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Theme Toggle Pill (auto-hides when idle, re-appears on scroll/move) -->
+  <div class="floating-theme-pill" id="floating-theme-pill">
+    <button class="floating-theme-btn" id="floating-theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+      <span class="theme-icon-sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </span>
+      <span class="theme-icon-moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </span>
+    </button>
+    <span class="floating-theme-label">Theme</span>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>
